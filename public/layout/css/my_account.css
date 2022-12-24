@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --or-1: #ee4d2d;
+    --or-2: #ff7337;
+    --pj-white: #fff;
+    --pj-bgr: #f5f5f5;
+    --pj-title: rgba(0,0,0,.54);
+    --pj-x: #555;
+    --pj-cate: rgba(0,0,0,.8);
+    --pj-black: #000;
+    --pj-sale: rgb(246, 145, 19);
+    --pj-price: #ee4d2d;
+}
+.grid{
+    width: 1200px;
+    margin: auto;
+}
+section{
+    padding: 30px 0;
+    background-color: var(--pj-bgr);
+}
+.update_account{ 
+    padding: 20px;
+    background-color: var(--pj-white);
+}
+.title{
+    border-bottom: 1px solid rgb(186, 186, 186);
+}
+.title>h2{
+    font-weight: 300;
+}
+.title>p{
+    padding-top: 7px;
+    padding-bottom: 20px;
+}
+.my_account{
+    display: flex;
+}
+.my_account--in4{
+    margin-top: 20px;
+    padding: 0 20px 20px 20px;
+    width: 65%;
+    border-right: 1px solid rgb(186, 186, 186);
+}
+.input_in4{
+    width: 300px;
+    height: 30px;
+}
+.my_account p{
+    margin: 10px 0;
+}
+.my_account a{
+    display: block;
+    margin-top: 10px;
+}
+
+.btn_account{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--or-2);
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--pj-white);
+    background-color: var(--or-2);
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.my_account--avatar{
+    padding: 20px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.my_account--avatar img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btn_avatar{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid rgb(186, 186, 186);
+    background-color: var(--pj-white);
+}
+.input_avatar{
+    /* display: none; */
+}
+.btn_avatar:hover{
+    background-color: rgb(244, 244, 244);
+}
+.my_account--in4 a{
+    text-decoration: none;
+    color: var(--pj-x);
+}
+.my_account--in4 a:hover{
+    color: var(--pj-price);
+}

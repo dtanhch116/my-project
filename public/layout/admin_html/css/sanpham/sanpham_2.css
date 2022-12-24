@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pj-green: #28a745;
+    --pj-teal: #20c997;
+    --pj-white: #fff;
+    --pj-black: #000;
+    --pj-text: #333;
+    --pj-text2: rgb(81, 80, 80);
+    --pj-text3: rgb(117, 117, 117);
+    --pj-primary: #fd5e32;
+    --pj-primarySub: #fef6f5;
+    --pj-home: #f5f5f5;
+    --pj-error: #ee2c4a;
+    --pj-star: #ffce3d;
+    --pj-blue: blue;
+    --pj-blue2: #007bff;
+}
+.main{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+.link__home{
+    text-decoration: none;
+}
+.menu{
+    position: fixed;
+    width: 14%;
+    height: 100vh;
+    z-index: 3;
+    background-color: var(--pj-home);
+    /* border-right: 1px solid rgb(244, 244, 244); */
+}
+.header{
+    border-bottom: 1px solid rgb(244, 244, 244);
+    border-right: 1px solid var(--pj-white);
+    height: 70px;
+    right: 0;
+    width: 86%;
+    z-index: 2;
+    box-shadow: 0px 0px 7px 0px black;
+    background-color: var(--pj-white);
+    position: fixed;
+}
+.logo{
+    width: 70px;
+    height: 69px;
+    /* border-bottom: 1px solid rgb(244, 244, 244); */
+}
+.menu__logo{
+    height: 70px;
+    display: flex;
+    background-color: var(--pj-white);
+    border-bottom: 1px solid rgb(244, 244, 244);
+    box-shadow: -7px 0px 7px 0px black;
+
+}
+.logo>img{
+    width: 100%;
+    height: 100%;
+}
+.name__logo{
+    line-height: 70px;
+}
+.name__logo>h2{
+    
+}
+.pro{
+    color: var(--pj-green);
+}
+.right{
+    right: 0;
+    position: absolute;
+    width: 84%;
+}
+.hello{
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--pj-primary);
+}
+/*----------- thao tác----------*/
+.Manipulation{
+    position: fixed;
+    z-index: 1;
+    margin-left: 3px;
+    transform: translateX(-2%);
+    width: 85%;
+    background-color: var(--pj-white);
+}
+.btn__Manipulation{
+        margin: 15px 0;
+}
+.t9d0ea1{
+    width: 120px !important;
+}
+/*----------- end thao tác----------*/
+.hello>h1{
+    padding-top: 8px;
+    text-align: center;
+    color: var(--pj-white);
+}
+.menu__title>li{
+    margin-top: 10px;
+    list-style: none;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menu__title>li:hover{
+    background-color: var(--pj-white);
+}
+.menu__title{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.menu__title>li>a{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-left: 10px;
+    color: var(--pj-primary);
+    text-decoration: none;    
+}
+.user{
+    position: absolute;
+    margin-top: 10px;
+    display: flex;
+    right: 0;
+    width: 300px;
+    height: 50px;
+}
+.header__img-user{
+    width: 50px;
+    height: 100%;
+}
+.header__img-user>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.header__name-user{
+    position: relative;
+    margin-top: 12px;
+    margin-left: 10px;
+    height: 20px;
+}
+.r9e80{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--pj-primary);
+}
+.logout{
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 50px;
+    background-color: var(--pj-primary);
+    border: 1px solid red;
+    display: none;
+}
+.header__name-user:hover .logout{
+    display: block;
+}
+.logout>p{
+    padding-top: 10px;
+    text-align: center;
+}
+.logout>p>a{
+    font-weight: 600;
+    color: var(--pj-white);
+    text-decoration: none;
+}
+
+/*--------------------*/
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 49%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    text-align: center;
+}
+th{
+    height: 30px;
+    color: var(--pj-white);
+    background-color: var(--pj-green);
+}
+.td_7{
+    width: 17%;
+}
+.td_2{
+    width: 15%;
+}
+.td_5{
+    width: 30%;
+}
+table tr td{
+    padding: 8px;
+}
+.img__admin{
+    margin: 5px 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+.d0r94{
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.t9d0ea{
+    margin: 0 3px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--pj-white);
+    background-color: var(--pj-primary);
+    border: 1px solid var(--pj-primary);
+}
+.t9d0ea:hover{
+    color: var(--pj-primary);
+    background-color: var(--pj-white);
+}

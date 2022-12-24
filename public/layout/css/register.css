@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --pj-green: #28a745;
+    --pj-teal: #20c997;
+    --pj-white: #fff;
+    --pj-black: #000;
+    --pj-text: #333;
+    --pj-text2: rgb(81, 80, 80);
+    --pj-text3: rgb(117, 117, 117);
+    --pj-primary: #fd5e32;
+    --pj-primarySub: #fef6f5;
+    --pj-home: #f5f5f5;
+    --pj-error: #ee2c4a;
+    --pj-star: #ffce3d;
+    --pj-blue: blue;
+    --pj-blue2: #007bff;
+}
+.logo__register--name{
+    position: absolute;
+    font-size: 35px;
+    bottom: 30px;
+    font-weight: 800;
+    color: var(--pj-black);
+}
+.logo__register--link{
+    position: relative;
+}
+.r9t8a1{
+    color: var(--pj-primary);
+}
+.r9t8a2{
+    color: var(--pj-green);
+}
+.logo__register{
+    width: 373px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.from__register{
+    border: 1px solid;
+    padding: 10px;
+    width: 600px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.register__input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;  
+}
+.btn--register{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 30px;
+    color: var(--pj-home);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: var(--pj-primary);
+    border: 1px solid var(--pj-primary);
+
+}
