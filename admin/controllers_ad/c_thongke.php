@@ -16,7 +16,6 @@ session_start();
         }
 
         
-        
         $view = "views_ad/thongke/v_thongke.php";
         include "templates/front-end/layout.php";
     }
