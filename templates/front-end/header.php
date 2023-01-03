@@ -53,7 +53,7 @@
 
                 <div class="header-logo-search">
                     <div class="header--logo">
-                        <a href="index.php"><img src="public/layout/images/banner_logo/cu_dem.png" alt=""></a>
+                        <a href="index.php"><img src="public/layout/images/banner_logo/cu_demlogo.png" alt=""></a>
                     </div>
                     <div class="header--search">
                         <form action="" method="POST" class="header__search--form">

@@ -9,20 +9,16 @@
 
             if($new_pass == $retype_pass){
                 $err = '';
-                echo "dung";
             }else{
                 echo "sai";
-                $err = 'Mật khẩu không đúng';
             }
             
             if(empty($err)){
-                echo 'hihi';
                 require_once "models/libraryPDO.php";
-                $sql = "UPDATE khach_hang SET mat_khau = $retype_pass WHERE id_kh = $id";
-                
+                // $sql = "UPDATE khach_hang SET mat_khau = $retype_pass WHERE id_kh = $id";
+                $sql = "UPDATE `khach_hang` SET`mat_khau`='$retype_pass' WHERE id_kh = $id";
                 pdo_execute($sql);
-                $msg = 'nice';
-                header("location: ?ctr=my_account&msg=$msg");
+                header("location: ?ctr=my_account");
             }
             
         }
@@ -63,7 +59,7 @@
             update_account($ten_login, $email, $address, $avatar, $phone, $id);
 
            
-            move_uploaded_file($file['tmp_name'] . '../../project1/public/layout/images/product/' , $file['name']);
+            move_uploaded_file($file['tmp_name'] . '../../project1/public/layout/images/avatar/' , $file['name']);
            
             header('location: ?ctr=my_account');
         }

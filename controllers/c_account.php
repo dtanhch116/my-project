@@ -81,6 +81,7 @@ session_start();
                 register_account($ho_ten, $mat_khau, $email, $dia_chi, $anh_user, $vai_tro);
                 move_uploaded_file($file['tmp_name'], 'public/layout/images/avatar/' .$anh_user);
 
+                header("location: ?ctr=login");
             }
         }
         $view = "views/account/v_register.php";

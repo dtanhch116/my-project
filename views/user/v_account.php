@@ -1,11 +1,5 @@
 <div id="main_user">
-    <?php 
-        if($_GET['msg'] == 'nice') :
-            echo '<script>
-            alert("Ban da doi pass thanh cong");
-        </script>';
-        endif;
-    ?>
+   
     
     <section>
         <div class="grid">
